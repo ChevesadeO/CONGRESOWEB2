@@ -1,2 +1,18 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Archivos PHP, HTML, CSS siempre como texto
+*.php text
+*.html text
+*.css text
+*.js text
+
+# Imágenes como binarios
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+
+# PDF como binario
+*.pdf binary
+

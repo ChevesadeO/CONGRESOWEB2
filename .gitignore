@@ -1,0 +1,98 @@
+# CakePHP 3
+
+/vendor/*
+/config/app.php
+
+/tmp/cache/models/*
+!/tmp/cache/models/empty
+/tmp/cache/persistent/*
+!/tmp/cache/persistent/empty
+/tmp/cache/views/*
+!/tmp/cache/views/empty
+/tmp/sessions/*
+!/tmp/sessions/empty
+/tmp/tests/*
+!/tmp/tests/empty
+
+/logs/*
+!/logs/empty
+
+# CakePHP 2
+
+/app/tmp/*
+/app/Config/core.php
+/app/Config/database.php
+/vendors/*
+
+########################################
+# SISTEMA OPERATIVO
+########################################
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+
+
+########################################
+# VISUAL STUDIO CODE
+########################################
+
+.vscode/
+*.code-workspace
+
+
+########################################
+# PHP ARCHIVOS TEMPORALES
+########################################
+
+*.log
+*.tmp
+
+
+########################################
+# ARCHIVOS SENSIBLES (NO SUBIR)
+########################################
+
+.env
+config.php
+database.php
+
+
+########################################
+# XAMPP (NUNCA SUBIR)
+########################################
+
+xampp/
+htdocs/
+mysql/
+phpMyAdmin/
+
+
+########################################
+# ARCHIVOS DE BACKUP O COMPRESIÓN
+########################################
+
+*.zip
+*.rar
+*.7z
+*.bak
+
+
+########################################
+# DEPENDENCIAS (SI USAS NODE EN FRONTEND)
+########################################
+
+node_modules/
+
+
+########################################
+# CACHE O ARCHIVOS GENERADOS
+########################################
+
+cache/
+dist/
+build/
+
