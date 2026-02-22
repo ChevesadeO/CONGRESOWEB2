@@ -43,12 +43,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 
-<!-- HERO -->
-<section class="hero-elegante d-flex align-items-center justify-content-center text-center">
-
-  <div id="particles fade-up">
-
-
 <!-- ✅ BANNER SUPERIOR -->
 <section class="page-banner fade-up">
   <div class="container text-center">
@@ -175,7 +169,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!-- LLAMMA A CONTADOR DE CONFERENCIAS SELECCIONADAS -->
  <script src="assets/js/contador.js"></script>
 
-<!--EFECTO PARALLAX-->
-<script src="assets/js/main.js"></script>
+
 
 <?php include("includes/footer.php"); ?>

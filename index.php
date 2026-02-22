@@ -1,26 +1,31 @@
 <?php include("includes/header.php"); ?>
 
+
 <!-- HERO -->
-<section class="hero-elegante d-flex align-items-center justify-content-center text-center">
+<section id="hero" class="hero-claro d-flex align-items-center justify-content-center text-center">
 
-  <div id="particles fade-up">
+  <div id="particles-light"></div>
 
-    <h1 class="hero-title">
+  <div class="hero-content fade-up">
+
+    <h1 class="hero-title-claro">
       Congreso FISC 2026
     </h1>
 
     <div class="hero-line"></div>
 
-    <p class="hero-subtitle">
-      Innovación, investigación y tecnología convergen
-      en un espacio diseñado para transformar el conocimiento en impacto real.
+    <p class="hero-subtitle-claro">
+      Un espacio donde la innovación y la investigación
+      impulsan el desarrollo tecnológico con visión universitaria.
     </p>
 
-    <a href="inscripcion.php" class="btn btn-success btn-lg mt-4 px-5">
-      Inscribirme Ahora
+    <a href="inscripcion.php" 
+      class="btn btn-success btn-lg btn-pulse mt-4 px-5">
+      ¡Inscríbete!
     </a>
-    <a href="cronograma.php" class="btn btn-success  btn-lg mt-4 px-5">
-      Descarga Cronograma
+
+    <a href="cronograma.php" class="btn btn-success btn-lg mt-4 px-5">
+      Dercargar Cronograma
     </a>
 
   </div>
@@ -48,7 +53,7 @@
   <div class="container">
 
     <h2 class="fw-bold text-center mb-4 reveal">
-      📌 Fechas Importantes
+      Fechas Importantes
     </h2>
 
     <div class="row g-4 text-center">
@@ -88,7 +93,7 @@
   <div class="container">
 
     <h2 class="fw-bold text-center mb-5 reveal">
-      🎙️ Conferencias Destacadas
+      Conferencias Destacadas
     </h2>
 
     <div class="row g-4">
@@ -136,7 +141,7 @@
 
     <!-- Título -->
     <h2 class="fw-bold text-center mb-5 reveal">
-      🎓 Nuestros Ponentes Invitados
+      Nuestros Ponentes Invitados
     </h2>
 
     <div class="row g-4 justify-content-center">
@@ -226,6 +231,11 @@
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
 <script src="assets/js/main.js"></script>
+
+
+
+
+
 
 <?php include("includes/footer.php"); ?>
 
