@@ -64,3 +64,21 @@ document.addEventListener("DOMContentLoaded", function() {
     hero.classList.remove("hero-claro");
   }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const hora = new Date().getHours();
+  const body = document.body;
+
+  if (hora >= 6 && hora < 19) {
+    body.classList.add("modo-claro");
+  } else {
+    body.classList.add("modo-oscuro");
+  }
+
+  // Fade general
+  setTimeout(() => {
+    body.classList.add("visible");
+  }, 100);
+
+});

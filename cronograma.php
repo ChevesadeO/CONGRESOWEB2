@@ -5,4 +5,9 @@
   <p>Contenido principal aquí...</p>
 </div>
 
+
+
+
+
+
 <?php include("includes/footer.php"); ?>
