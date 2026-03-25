@@ -3,7 +3,7 @@
 /* ============ */
 
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #F2F2F2;
   margin: 0;
   padding: 0;
@@ -108,14 +108,14 @@ footer a:hover {
   opacity: 1;
 }
 
-/* Mantener texto encima */
+/* Mantiene el texto encima */
 .navbar .navbar-brand,
 .navbar .nav-link {
   position: relative;
   z-index: 2;
 }
 
-/* ===== HERO ELEGANTE ===== */
+/* ===== HERO ===== */
 
 .hero-elegante {
   min-height: 95vh;
@@ -140,65 +140,88 @@ footer a:hover {
   z-index: 3;
 }
 
+
+
+/* ==========  */
+/* HERO CLARO  */
+/* ==========  */
+.hero-claro,
+.hero-elegante {
+  min-height: 95vh;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px;
+}
+
+/* Contenedor de slides */
+.hero-slider {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Cada imagen */
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 1.2s ease, transform 6s ease;
+}
+
+/* Imagen visible */
+.hero-slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Overlay elegante para que el texto se lea */
+.hero-claro::before,
+.hero-elegante::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(255,255,255,0.55),
+    rgba(255,255,255,0.72)
+  );
+  z-index: 1;
+}
+
+/* Si quieres modo oscuro más cinematográfico */
+.hero-elegante::before {
+  background: linear-gradient(
+    rgba(10,20,30,0.45),
+    rgba(10,20,30,0.72)
+  );
+}
+
+/* Partículas */
+#particles,
+#particles-light {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+/* Contenido */
+.hero-content {
+  position: relative;
+  z-index: 3;
+}
+
 /* Luz del cursor */
+.hero-claro::after,
 .hero-elegante::after {
   content: "";
   position: absolute;
   inset: 0;
   background: radial-gradient(
     circle at var(--x, 50%) var(--y, 50%),
-    rgba(71, 201, 101, 0.12),
-    transparent 40%
-  );
-  pointer-events: none;
-  z-index: 2;
-}
-
-/* ==========  */
-/* HERO CLARO  */
-/* ==========  */
-
-.hero-claro {
-  min-height: 95vh;
-  position: relative;
-  overflow: hidden;
-  padding: 40px 20px;
-
-  background:
-    linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
-    url("assets/img/campus.jpg") center/cover no-repeat;
-}
-
-/*  SIN PATRÓN */
-.hero-claro::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: transparent; /* SIN CUADROS */
-  z-index: 1;
-}
-
-/* Partículas claras */
-#particles-light {
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-}
-
-/* Contenido encima */
-.hero-content {
-  position: relative;
-  z-index: 3;
-}
-
-/* Luz cursor suave */
-.hero-claro::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    circle at var(--x, 50%) var(--y, 50%),
-    rgba(71,201,101,0.08),
+    rgba(95, 33, 209, 0.1),
     transparent 40%
   );
   pointer-events: none;
@@ -229,7 +252,7 @@ footer a:hover {
 }
 
 .hero-subtitle-claro {
-  color: #444;
+  color: #000000;
 }
 
 /* Línea animada */
@@ -237,7 +260,7 @@ footer a:hover {
   width: 120px;
   height: 3px;
   margin: 20px auto;
-  background: linear-gradient(90deg, #2f730a, #47C965, #2f730a);
+  background: linear-gradient(90deg, #3E0A75, #641cad, #F2F2F2);
   background-size: 200% 100%;
   border-radius: 3px;
   animation: glowLine 5s linear infinite;
@@ -335,7 +358,15 @@ footer a:hover {
   }
 }
 
+.btn-success {
+  background-color: #5B0FA6 !important;
+  border-color: #5B0FA6 !important;
+}
 
+.btn-success:hover {
+  background-color: #3E0A75!important;
+  border-color: #3E0A75!important;
+}
 
 
 /* ================== */
