@@ -4,7 +4,7 @@ tsParticles.load("particles", {
   particles: {
     number: { value: 50 },
     size: { value: 3 },
-    color: { value: "#47C965" },
+    color: { value: "#3E0A75" },
     opacity: { value: 0.20 },
     move: {
       enable: true,
@@ -29,7 +29,7 @@ tsParticles.load("particles-light", {
   particles: {
     number: { value: 50 },
     size: { value: 3 },
-    color: { value: ["#47C965", "#999999"] },
+    color: { value: ["#5B0FA6", "#"] },
     opacity: { value: 0.18 },
     move: {
       enable: true,
