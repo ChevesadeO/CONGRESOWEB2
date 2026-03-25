@@ -1,39 +1,33 @@
 <?php include("includes/header.php"); ?>
 
 
-<!-- HERO -->
-<section id="hero" class="hero-claro d-flex align-items-center justify-content-center text-center">
-  
-<div class="hero-slider">
-    <div class="hero-slide active" style="background-image: url('assets/img/hero1.png');"></div>
-    <div class="hero-slide" style="background-image: url('assets/img/hero2.png');"></div>
-    <div class="hero-slide" style="background-image: url('assets/img/hero3.png');"></div>
+<div class="hero-content container text-center">
 
+  <div class="hero-badge-center">
+    <img src="assets/img/logo-45-utp.png" alt="45 años de la Universidad Tecnológica de Panamá">
   </div>
 
-  <div id="particles-light"></div>
-  <!-- imagenes del Hero -->
-  <div class="hero-content container text-center">
-    <h3 class="hero-subtitle-claro">IV Congreso Internacional</h3>
+  <h3 class="hero-subtitle-claro">IV Congreso Internacional</h3>
 
-    
-    <h3 class="hero-title-claro">
-      Nuevas Estrategias Tecnológicas 
-    </h3>
-    <h5 class="hero-subtitle"> para impulsar la competitividad portuaria y logística regional.</h5>
-    <div class="hero-line"></div>
-    <!-- Botones -->
-    <a href="inscripcion.php"  
-      class="btn btn-success btn-lg btn-pulse mt-4 px-5">
-      ¡Inscríbete!
-    </a>
-    <a href="cronograma.php" class="btn btn-success btn-lg mt-4 px-5">
-      Descargar Cronograma
-    </a>
+  <h3 class="hero-title-claro">
+    Nuevas Estrategias Tecnológicas
+  </h3>
 
-    </p>
-  </div>
-</section>
+  <h5 class="hero-subtitle-claro">
+    para impulsar la competitividad portuaria y logística regional.
+  </h5>
+
+  <div class="hero-line"></div>
+
+  <a href="inscripcion.php" class="hero-btn btn-pulse mt-4 px-5">
+    ¡Inscríbete!
+  </a>
+
+  <a href="cronograma.php" class="hero-btn-outline mt-4 px-5">
+    Descargar Cronograma
+  </a>
+
+</div>
 
 
 <!-- ACERCA DEL CONGRESO -->

@@ -3,7 +3,7 @@
 /* ============ */
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Rokkit", sans-serif;
   background-color: #F2F2F2;
   margin: 0;
   padding: 0;
@@ -453,5 +453,41 @@ footer a:hover {
   button.btn-lg {
     font-size: 1.05rem;
     padding: 14px;
+  }
+}
+
+
+/* ============================= */
+/* LOGO 45 AÑOS ENCIMA DEL TÍTULO */
+/* ============================= */
+
+.hero-badge-center {
+  text-align: center;
+  margin-bottom: 18px;
+  animation: fadeInDown 1s ease;
+}
+
+.hero-badge-center img {
+  width: 130px;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.98;
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.12));
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hero-badge-center img:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
