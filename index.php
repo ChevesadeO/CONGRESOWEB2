@@ -3,7 +3,6 @@
 
 <!-- HERO -->
 <section id="hero" class="hero-claro d-flex align-items-center justify-content-center text-center">
-
   <div id="particles-light"></div>
 
   <div class="hero-content fade-up">

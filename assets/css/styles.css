@@ -4,7 +4,7 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background-color: #3E0A75;
+  background-color: #F2F2F2;
   margin: 0;
   padding: 0;
 }
@@ -115,19 +115,139 @@ footer a:hover {
   z-index: 2;
 }
 
-/* ==================== */
-/* REVEAL SCROLL EFFECT */
-/* ==================== */
-.reveal {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.9s ease;
+/* ===== HERO ELEGANTE ===== */
+
+.hero-elegante {
+  min-height: 95vh;
+  position: relative;
+  background:
+    linear-gradient(rgba(238, 240, 241, 0.75), rgba(10, 20, 30, 0.75)),
+    url("assets/img/congreso-bg.jpg") center/cover no-repeat;
+  color: white;
+  padding: 40px 20px;
 }
 
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
+/* Partículas */
+#particles {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
+
+/* Contenido */
+.hero-content {
+  position: relative;
+  z-index: 3;
+}
+
+/* Luz del cursor */
+.hero-elegante::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(71, 201, 101, 0.12),
+    transparent 40%
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ==========  */
+/* HERO CLARO  */
+/* ==========  */
+
+.hero-claro {
+  min-height: 95vh;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px;
+
+  background:
+    linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+    url("assets/img/campus.jpg") center/cover no-repeat;
+}
+
+/*  SIN PATRÓN */
+.hero-claro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: transparent; /* SIN CUADROS */
+  z-index: 1;
+}
+
+/* Partículas claras */
+#particles-light {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
+/* Contenido encima */
+.hero-content {
+  position: relative;
+  z-index: 3;
+}
+
+/* Luz cursor suave */
+.hero-claro::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(71,201,101,0.08),
+    transparent 40%
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ============================= */
+/* TEXTOS */
+/* ============================= */
+
+.hero-title,
+.hero-title-claro {
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.hero-title-claro {
+  color: #1a1a1a;
+}
+
+.hero-subtitle,
+.hero-subtitle-claro {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.hero-subtitle-claro {
+  color: #444;
+}
+
+/* Línea animada */
+.hero-line {
+  width: 120px;
+  height: 3px;
+  margin: 20px auto;
+  background: linear-gradient(90deg, #2f730a, #47C965, #2f730a);
+  background-size: 200% 100%;
+  border-radius: 3px;
+  animation: glowLine 5s linear infinite;
+}
+
+@keyframes glowLine {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
 
 /* ================== */
 /* PONENTES INVITADOS */
@@ -150,7 +270,6 @@ footer a:hover {
   border-radius: 50%;
   border: 4px solid #5B0FA6;
 }
-
 
 /* ========= */
 /* CTA FINAL */
@@ -196,40 +315,28 @@ footer a:hover {
   }
 }
 
-/* ============ */
-/* HERO MOBILE  */
-/* ============ */
-@media (max-width: 768px) {
 
-  /* Apagar video SOLO en móvil */
-  .hero-video video {
-    display: none !important;
+/* ========= BOTON INSCRIPCION ========= */
+/* Botón con pulso elegante */
+.btn-pulse {
+  position: relative;
+  animation: pulseSoft 2.5s infinite;
+}
+
+@keyframes pulseSoft {
+  0% {
+    box-shadow: 0 0 0 0 #3E0A75;
   }
-
-  /* Imagen solo móvil */
-  .hero-video {
-    background: url("../img/hero-mobile.jpg") center/cover no-repeat;
-    height: 100svh;
+  70% {
+    box-shadow: 0 0 0 15px rgba(71, 201, 101, 0);
   }
-
-  /* Overlay claro para leer texto */
-  .hero-video .overlay {
-    background: #3E0A75;
-  }
-
-  /* Texto negro en móvil */
-  .hero-content {
-    color: black;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
+  100% {
+    box-shadow: 0 0 0 0 rgba(71, 201, 101, 0);
   }
 }
+
+
+
 
 /* ================== */
 /* CSS - INSCRIPCION  */
@@ -255,7 +362,7 @@ footer a:hover {
   max-width: 750px;
   margin-top: -50px;
   border-radius: 22px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08)};
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08)
 }
 
 /* Animación elegante */
@@ -315,277 +422,5 @@ footer a:hover {
   button.btn-lg {
     font-size: 1.05rem;
     padding: 14px;
-  }
-}
-
-
-/* ===== HERO ELEGANTE ===== */
-
-.hero-elegante {
-  min-height: 95vh;
-  position: relative;
-  background:
-    linear-gradient(rgba(238, 240, 241, 0.75), rgba(10, 20, 30, 0.75)),
-    url("assets/img/congreso-bg.jpg") center/cover no-repeat;
-  color: white;
-  padding: 40px 20px;
-}
-
-/* Título */
-.hero-title {
-  font-size: clamp(2.2rem, 5vw, 4.5rem);
-  font-weight: 800;
-  letter-spacing: 1px;
-
-  background: linear-gradient(to bottom, #ffffff, #bfc9d4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Línea tecnológica decorativa */
-.hero-line {
-  width: 120px;
-  height: 3px;
-  margin: 20px auto;
-  background: linear-gradient(90deg, #47C965, #2f730a);
-  border-radius: 3px;
-  box-shadow: 0 0 15px rgba(71, 201, 101, 0.6);
-}
-
-/* Subtítulo */
-.hero-subtitle {
-  max-width: 750px;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  opacity: 0.9;
-  line-height: 1.6;
-}
-
-/* Botón elegante */
-.hero-elegante .btn {
-  border-radius: 40px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.hero-elegante .btn:hover {
-  background: #47C965;
-  border-color: #47C965;
-  box-shadow: 0 0 20px rgba(71, 201, 101, 0.6);
-}
-
-.fade-up {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeUp 1.2s ease forwards;
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@media (max-width: 768px) {
-
-  .hero-elegante {
-    min-height: 75vh;
-    padding: 20px;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-
-  .hero-line {
-    width: 80px;
-  }
-}
-
-#particles {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 3;
-}
-
-.hero-elegante::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%),
-    rgba(71, 201, 101, 0.12),
-    transparent 40%);
-  pointer-events: none;
-  z-index: 2;
-  transition: background 0.1s ease;
-}
-
-.hero-line {
-  width: 120px;
-  height: 3px;
-  margin: 20px auto;
-  background: linear-gradient(90deg, #2f730a, #47C965, #2f730a);
-  background-size: 200% 100%;
-  border-radius: 3px;
-  animation: glowLine 4s linear infinite;
-}
-
-@keyframes glowLine {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 200% 50%; }
-}
-
-.hero-elegante {
-  background:
-    linear-gradient(rgba(10, 20, 30, 0.8), rgba(10, 20, 30, 0.8)),
-    url("assets/img/congreso-bg.jpg") center/cover no-repeat;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Patrón geométrico muy tenue */
-.hero-elegante::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-  background-size: 40px 40px;
-  z-index: 1;
-}
-
-/* ============================= */
-/* HERO CLARO INSTITUCIONAL */
-/* ============================= */
-
-.hero-claro {
-  min-height: 95vh;
-  position: relative;
-  overflow: hidden;
-  padding: 40px 20px;
-
-  background:
-    linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
-    url("assets/img/campus.jpg") center/cover no-repeat;
-}
-
-/* Patrón geométrico tenue */
-.hero-claro::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
-  background-size: 50px 50px;
-  z-index: 1;
-}
-
-/* Contenido encima */
-.hero-content {
-  position: relative;
-  z-index: 3;
-}
-
-/* Título oscuro elegante */
-.hero-title-claro {
-  font-size: clamp(2.2rem, 5vw, 4.5rem);
-  font-weight: 800;
-  color: #1a1a1a;
-  letter-spacing: 1px;
-}
-
-/* Subtítulo */
-.hero-subtitle-claro {
-  max-width: 750px;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  color: #444;
-  line-height: 1.6;
-}
-
-/* Línea verde animada */
-.hero-line {
-  width: 120px;
-  height: 3px;
-  margin: 20px auto;
-  background: linear-gradient(90deg, #2f730a, #47C965, #2f730a);
-  background-size: 200% 100%;
-  border-radius: 3px;
-  animation: glowLine 5s linear infinite;
-}
-
-@keyframes glowLine {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 200% 50%; }
-}
-
-#particles-light {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
-
-/*Luz cursor versión clara (MUY suave)*/
-.hero-claro::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%),
-    rgba(71,201,101,0.08),
-    transparent 40%);
-  pointer-events: none;
-  z-index: 2;
-}
-
-
-/* Responsivo para móvil */
-@media (max-width: 768px) {
-
-  .hero-claro {
-    min-height: 75vh;
-    padding: 20px;
-  }
-
-  .hero-title-claro {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle-claro {
-    font-size: 1rem;
-  }
-
-  .hero-line {
-    width: 80px;
-  }
-}
-
-/* ========= BOTON INSCRIPCION ========= */
-/* Botón con pulso elegante */
-.btn-pulse {
-  position: relative;
-  animation: pulseSoft 2.5s infinite;
-}
-
-@keyframes pulseSoft {
-  0% {
-    box-shadow: 0 0 0 0 rgba(71, 201, 101, 0.5);
-  }
-  70% {
-    box-shadow: 0 0 0 15px rgba(71, 201, 101, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(71, 201, 101, 0);
   }
 }

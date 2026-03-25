@@ -1,4 +1,4 @@
-
+/* ===== PARTICULAS OSCURO ===== */
 tsParticles.load("particles", {
   background: { color: "transparent" },
   particles: {
@@ -13,23 +13,24 @@ tsParticles.load("particles", {
   }
 });
 
-
-
+/* ===== EFECTO MOUSE OSCURO ===== */
 const hero = document.querySelector(".hero-elegante");
 
-hero.addEventListener("mousemove", e => {
-  const rect = hero.getBoundingClientRect();
-  hero.style.setProperty("--x", `${e.clientX - rect.left}px`);
-  hero.style.setProperty("--y", `${e.clientY - rect.top}px`);
-});
+if (hero) {
+  hero.addEventListener("mousemove", e => {
+    const rect = hero.getBoundingClientRect();
+    hero.style.setProperty("--x", `${e.clientX - rect.left}px`);
+    hero.style.setProperty("--y", `${e.clientY - rect.top}px`);
+  });
+}
 
-
+/* ===== PARTICULAS CLARO ===== */
 tsParticles.load("particles-light", {
   background: { color: "transparent" },
   particles: {
     number: { value: 50 },
     size: { value: 3 },
-    color: { value: ["#5B0FA6", "#"] },
+    color: { value: "#5B0FA6" }, // 🔥 corregido
     opacity: { value: 0.18 },
     move: {
       enable: true,
@@ -38,33 +39,36 @@ tsParticles.load("particles-light", {
   }
 });
 
-
+/* ===== EFECTO MOUSE CLARO ===== */
 const heroClaro = document.querySelector(".hero-claro");
 
-heroClaro.addEventListener("mousemove", e => {
-  const rect = heroClaro.getBoundingClientRect();
-  heroClaro.style.setProperty("--x", `${e.clientX - rect.left}px`);
-  heroClaro.style.setProperty("--y", `${e.clientY - rect.top}px`);
-});
+if (heroClaro) {
+  heroClaro.addEventListener("mousemove", e => {
+    const rect = heroClaro.getBoundingClientRect();
+    heroClaro.style.setProperty("--x", `${e.clientX - rect.left}px`);
+    heroClaro.style.setProperty("--y", `${e.clientY - rect.top}px`);
+  });
+}
 
-
-window.matchMedia('(prefers-color-scheme: dark)').matches 
-
-
-
+/* ===== CAMBIO AUTOMATICO DIA/NOCHE ===== */
 document.addEventListener("DOMContentLoaded", function() {
+
   const hora = new Date().getHours();
   const hero = document.getElementById("hero");
 
-  if (hora >= 6 && hora < 19) {
-    hero.classList.add("hero-claro");
-    hero.classList.remove("hero-oscuro");
-  } else {
-    hero.classList.add("hero-oscuro");
-    hero.classList.remove("hero-claro");
+  if (hero) {
+    if (hora >= 6 && hora < 19) {
+      hero.classList.add("hero-claro");
+      hero.classList.remove("hero-oscuro");
+    } else {
+      hero.classList.add("hero-elegante");
+      hero.classList.remove("hero-claro");
+    }
   }
+
 });
 
+/* ===== MODO BODY ===== */
 document.addEventListener("DOMContentLoaded", function() {
 
   const hora = new Date().getHours();
@@ -76,7 +80,6 @@ document.addEventListener("DOMContentLoaded", function() {
     body.classList.add("modo-oscuro");
   }
 
-  // Fade general
   setTimeout(() => {
     body.classList.add("visible");
   }, 100);
