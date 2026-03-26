@@ -14,8 +14,8 @@
   <div id="particles-light"></div>
 
   <div class="hero-badge-center">
-    <img src="assets/img/logo-45-utp.png" alt="45 años de la Universidad Tecnológica de Panamá">
-  </div>
+    <img src="assets/img/utp45.gif" alt="45 años de la Universidad Tecnológica de Panamá">
+  </div
 
 
   <div class="hero-content container text-center">
