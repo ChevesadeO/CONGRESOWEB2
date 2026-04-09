@@ -1,9 +1,9 @@
-🌐 Sitio Web Oficial – Congreso Académico de la Facultad de Sistemas Computacionales del Centro Regional de Colon
+Sitio Web Oficial – Congreso Académico de la Facultad de Sistemas Computacionales del Centro Regional de Colon
 
 Este repositorio contiene el desarrollo del sitio web informativo y de registro para el **Congreso Académico de la Facultad**, creado con el objetivo de facilitar la difusión del evento, el cronograma y la inscripción de estudiantes.
 
 
-🎓 Descripción del Proyecto
+Descripción del Proyecto
 
 La plataforma permite:
 
@@ -14,7 +14,7 @@ La plataforma permite:
 - Garantizar que cada estudiante seleccione mínimo 3 conferencias
 
 
-🚀 Tecnologías Utilizadas
+Tecnologías Utilizadas
 
 - **HTML5**  
 - **CSS3 + Bootstrap**
@@ -23,7 +23,7 @@ La plataforma permite:
 - **MySQL (phpMyAdmin)**
 
 
-🗂️ Estructura del Sitio
+Estructura del Sitio
 
 - **Inicio** (Hero + sección informativa)
 - **Congreso**
@@ -36,7 +36,7 @@ La plataforma permite:
 
 📌 Funcionalidades Principales
 
-✅ Formulario de inscripción con campos:
+ Formulario de inscripción con campos:
 
 - Nombre completo
 - Cedula
@@ -44,17 +44,17 @@ La plataforma permite:
 - Año que cursa  
 - Selección de conferencias (mínimo 3)
 
-✅ Registro automático en base de datos  
-✅ Validación frontend + backend  
-✅ Diseño responsive para móviles y escritorio  
+ Registro automático en base de datos  
+ Validación frontend + backend  
+ Diseño responsive para móviles y escritorio  
 
 
-📄 Licencia
+Licencia
 
 Este proyecto se distribuye bajo la licencia **MIT**, permitiendo su uso y adaptación con fines académicos y educativos.
 
 
-✨ Autores
+Autores
 
 Desarrollado por: **Chevesade Ornano y Jason Ospina**  
 Estudiante de Licenciatura en Desarrollo y Gestión de Software  

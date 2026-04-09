@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!-- ✅ BANNER SUPERIOR -->
 <section class="page-banner fade-up">
   <div class="container text-center">
-    <h1 class="fw-bold mb-2">📝 Formulario de Inscripción</h1>
+    <h1 class="fw-bold mb-2">Formulario de Inscripción</h1>
     <p class="lead mb-0">
       Completa tus datos para participar en el Congreso Académico.
       Selecciona mínimo <strong>3 conferencias</strong>.
