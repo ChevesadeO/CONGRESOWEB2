@@ -34,7 +34,7 @@ Estructura del Sitio
 - **Galería**
 
 
-📌 Funcionalidades Principales
+Funcionalidades Principales
 
  Formulario de inscripción con campos:
 
