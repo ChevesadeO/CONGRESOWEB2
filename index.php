@@ -19,7 +19,7 @@
 
 
   <div class="hero-content container text-center">
-    <h3 class="hero-subtitle-claro">IV Congreso FISC</h3>
+    <h3 class="hero-subtitle-claro">IV Congreso Internacional</h3>
     
     <h3 class="hero-title-claro">
       Nuevas Estrategias Tecnológicas 

@@ -2,7 +2,7 @@
 //footer global para incluir en todas las páginas, contiene el cierre de body y html, además del footer
 ?>
 
-<footer class="bg-dark text-light pt-2 pb-3 mt-2">
+<footer class="bg-dark text-light pt-1 pb-0 mt-0">
    
     <hr class="border-secondary">
 

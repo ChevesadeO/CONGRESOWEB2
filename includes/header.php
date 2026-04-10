@@ -17,8 +17,8 @@
   <div class="container-fluid px-5">
 
     <a class="navbar-brand d-flex align-items-center fw-bold" href="index.php">
+      <img src="assets/img/utp45.png" width="45" class="me-2">
       <img src="assets/img/logo-fisc.png" width="45" class="me-2">
-      Facultad de Ingeniería de Sistemas Computacionales - UTP
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
