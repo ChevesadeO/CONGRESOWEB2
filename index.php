@@ -14,18 +14,28 @@
   <div id="particles-light"></div>
 
   <div class="hero-badge-center">
+<<<<<<< HEAD
     <img src="assets/img/">
   </div
+=======
+    <img src="assets/img/logo-45-utp.png">
+  </div>
+>>>>>>> d0de2b259360defc68c4bbcf567d707340758514
 
 
   <div class="hero-content container text-center">
     <h3 class="hero-subtitle-claro">IV Congreso Internacional</h3>
+    
     <h3 class="hero-title-claro">
       Nuevas Estrategias Tecnológicas 
     </h3>
     <h5 class="hero-subtitle"> para impulsar la competitividad portuaria y logística regional.</h5>
     
+    
+    
     <div class="hero-line"></div>
+
+
 
     <!-- Botones -->
     <a href="inscripcion.php"  
@@ -35,9 +45,9 @@
     <a href="cronograma.php" class="btn btn-success btn-lg mt-4 px-5">
       Descargar Cronograma
     </a>
+
     </p>
   </div>
-</div>
 </section>
 
 

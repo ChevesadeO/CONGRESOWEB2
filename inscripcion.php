@@ -43,10 +43,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 
-<!-- ✅ BANNER SUPERIOR -->
+<!-- BANNER SUPERIOR -->
 <section class="page-banner fade-up">
   <div class="container text-center">
-    <h1 class="fw-bold mb-2">📝 Formulario de Inscripción</h1>
+    <h1 class="fw-bold mb-2">Formulario de Inscripción</h1>
     <p class="lead mb-0">
       Completa tus datos para participar en el Congreso Académico.
       Selecciona mínimo <strong>3 conferencias</strong>.
@@ -54,12 +54,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <p class="small text-muted mt-2">
   Conferencias seleccionadas:
   <span id="contador" class="fw-bold text-success">0</span>/3 mínimo
-</p>
+  </p>
   </div>
 </section>
 
 
-<!-- ✅ SECCIÓN FORMULARIO -->
+<!--  SECCIÓN FORMULARIO -->
 <section class="form-section">
 
   <div class="container">

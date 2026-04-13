@@ -29,7 +29,7 @@ footer a:hover {
 .navbar-brand {
   font-size: 1rem;
   font-weight: 700;
-  color: #000000 !important;
+  color: #000000 !important; 
 }
 
 /* Links */
@@ -116,7 +116,6 @@ footer a:hover {
 }
 
 /* ===== HERO ===== */
-
 .hero-elegante {
   min-height: 95vh;
   position: relative;
@@ -139,8 +138,6 @@ footer a:hover {
   position: relative;
   z-index: 3;
 }
-
-
 
 /* ==========  */
 /* HERO CLARO  */
@@ -178,7 +175,7 @@ footer a:hover {
   transform: scale(1);
 }
 
-/* Overlay elegante para que el texto se lea */
+/* Overlay elegante  */
 .hero-claro::before,
 .hero-elegante::before {
   content: "";
@@ -191,7 +188,7 @@ footer a:hover {
   z-index: 1;
 }
 
-/* Si quieres modo oscuro más cinematográfico */
+/* modo oscuro */
 .hero-elegante::before {
   background: linear-gradient(
     rgba(10,20,30,0.45),
@@ -231,28 +228,28 @@ footer a:hover {
 /* ============================= */
 /* TEXTOS */
 /* ============================= */
-
 .hero-title,
 .hero-title-claro {
-  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  font-size: clamp(3.5rem, 5vw, 4.5rem);
   font-weight: 800;
   letter-spacing: 1px;
 }
 
 .hero-title-claro {
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
 .hero-subtitle,
 .hero-subtitle-claro {
   max-width: 750px;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
   line-height: 1.6;
 }
 
 .hero-subtitle-claro {
-  color: #000000;
+  color: #ffffff;
+  font-size: clamp(1rem, 3vw, 1.4rem);
 }
 
 /* Línea animada */
@@ -340,7 +337,6 @@ footer a:hover {
 
 
 /* ========= BOTON INSCRIPCION ========= */
-/* Botón con pulso elegante */
 .btn-pulse {
   position: relative;
   animation: pulseSoft 2.5s infinite;
